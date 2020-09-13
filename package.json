@@ -1,11 +1,6 @@
 {
-  "name": "c_d_d",
+  "name": "root",
   "version": "0.0.1",
-  "description": "components driven developments",
-  "main": "index.js",
-  "repository": "https://github.com/FFM-TEAM/CDD.git",
-  "author": "s-ong-c <somony9292@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
@@ -17,6 +12,9 @@
     "eslint": "^7.9.0",
     "lerna": "^3.22.1"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
     "typescript": "^4.0.2"
   }
