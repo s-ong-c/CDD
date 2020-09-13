@@ -39,7 +39,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@cdd/utils": "file:packages/utils"
+    "@cdd-io/utils": "file:packages/utils"
   },
   "workspaces": [
     "packages/*",
