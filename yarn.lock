@@ -478,18 +478,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cdd-io/utils@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "@cdd-io/utils@workspace:packages/utils"
-  languageName: unknown
-  linkType: soft
-
-"@cdd/utils@file:packages/utils::locator=root%40workspace%3A.":
-  version: 0.0.1
-  resolution: "@cdd/utils@file:packages/utils#packages/utils::hash=ecb659&locator=root%40workspace%3A."
-  checksum: dadffadc3e8616ebdfb29d89239c07a948fc61df7584b94660e1cc95bc7e35451a848c32c87c5b7b78b836fe4244499f1d28840517d69f1555b1660c52cda867
+"@cdd/utils@file:packages/@cdd-utils::locator=root%40workspace%3A.":
+  version: 0.0.1-alpha.0
+  resolution: "@cdd/utils@file:packages/@cdd-utils#packages/@cdd-utils::hash=cd1dba&locator=root%40workspace%3A."
+  checksum: d7a8bf0b928f21b8daccde1a33ef3210506686244891cbc19d75912fe52ab26b560faa5fc942ec7d342c3312a0e06f6e2b5b685fcdb2ffc310fad8cd7841e47e
   languageName: node
   linkType: hard
+
+"@cdd/utils@workspace:packages/@cdd-utils":
+  version: 0.0.0-use.local
+  resolution: "@cdd/utils@workspace:packages/@cdd-utils"
+  languageName: unknown
+  linkType: soft
 
 "@commitlint/execute-rule@npm:^11.0.0":
   version: 11.0.0
@@ -7406,7 +7406,7 @@ fsevents@~2.1.2:
     "@babel/plugin-proposal-optional-chaining": ^7.10.4
     "@babel/preset-react": ^7.10.4
     "@babel/preset-typescript": ^7.10.4
-    "@cdd/utils": "file:packages/utils"
+    "@cdd/utils": "file:packages/@cdd-utils"
     "@typescript-eslint/eslint-plugin": ^3.6.1
     "@typescript-eslint/parser": ^3.6.1
     commitizen: ^4.1.2
