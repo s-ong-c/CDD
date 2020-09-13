@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "scripts": {
     "build": "lerna run build",
+    "test": "lerna run test",
+    "typecheck": "lerna run typecheck",
+    "lint": "lerna run lint",
     "yarn:update": "yarn set version latest",
     "extract:dependency": "lerna link convert",
-    "new:generate": "node scripts/generate-new-kit.js"
+    "new:generate": "node scripts/generate-new-kit.js",
+    "publish": "lerna publish",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -16,8 +21,11 @@
     "@babel/preset-typescript": "^7.10.4",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
+    "commitizen": "^4.1.2",
     "concurrently": "^4.1.2",
+    "cz-lerna-changelog": "^2.0.3",
     "eslint": "^7.5.0",
+    "git-cz": "^4.7.0",
     "inquirer": "^7.3.3",
     "lerna": "^3.22.1",
     "rollup": "^2.23.0",
@@ -36,5 +44,13 @@
   "workspaces": [
     "packages/*",
     "examples/*"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-lerna-changelog"
+    }
+  }
 }
