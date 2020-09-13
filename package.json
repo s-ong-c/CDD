@@ -1,0 +1,23 @@
+{
+  "name": "c_d_d",
+  "version": "0.0.1",
+  "description": "components driven developments",
+  "main": "index.js",
+  "repository": "https://github.com/FFM-TEAM/CDD.git",
+  "author": "s-ong-c <somony9292@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "yarn:update": "yarn set version latest"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.9.0",
+    "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "typescript": "^4.0.2"
+  }
+}
