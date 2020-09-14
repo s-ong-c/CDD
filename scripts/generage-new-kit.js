@@ -1,4 +1,3 @@
-
 const inquirer = require('inquirer');
 const sh = require('shelljs');
 
@@ -14,7 +13,7 @@ const sh = require('shelljs');
       console.log('Not supported type');
       return;
     }
-    const packageName = `@cdd/${name}`
+    const packageName = `@becca/${name}`
 
     sh.exec(`npx hygen ${type} new --name ${packageName} --description ${description}`)
   } catch (e) {
