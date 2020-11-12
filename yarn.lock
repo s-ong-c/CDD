@@ -1463,12 +1463,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cdd/utils@workspace:packages/@cdd-utils":
-  version: 0.0.0-use.local
-  resolution: "@cdd/utils@workspace:packages/@cdd-utils"
-  languageName: unknown
-  linkType: soft
-
 "@cnakazawa/watch@npm:^1.0.3":
   version: 1.0.4
   resolution: "@cnakazawa/watch@npm:1.0.4"
@@ -1768,6 +1762,12 @@ __metadata:
   checksum: 10b1841bfb7f1b6735d8ebe32a18bbbff96221bd42afa9ce7acd87c09d467d5c6468ad2e220dd739dd2e49c4aed09d62cbf06942890265002e0f769afeb1f5ad
   languageName: node
   linkType: hard
+
+"@inter-section/utils@workspace:packages/@inter-section-utils":
+  version: 0.0.0-use.local
+  resolution: "@inter-section/utils@workspace:packages/@inter-section-utils"
+  languageName: unknown
+  linkType: soft
 
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.1.0
