@@ -1,7 +1,7 @@
 {
   "name": "@cdd/utils",
   "description": "Utils for cdd",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/esm/index.js",
