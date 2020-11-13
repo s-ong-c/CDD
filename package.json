@@ -3,6 +3,7 @@
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
+    "start": "craco start",
     "typecheck": "lerna run typecheck",
     "lint": "eslint -c .eslintrc.js 'packages/**/*.{js,jsx,ts,tsx}'",
     "yarn:update": "yarn set version latest",
