@@ -10,6 +10,7 @@
     "extract:dependency": "lerna link convert",
     "new:generate": "node scripts/generate-new-kit.js",
     "publish": "lerna publish from-package --yes",
+    "semantic-release": "lerna exec --concurrency 1 -- semantic-release -e semantic-release-monorepo --tag-format='${LERNA_PACKAGE_NAME}-v\\${version}'",
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
