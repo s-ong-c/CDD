@@ -26,7 +26,7 @@ module.exports = {
     'semi': 2,
     'quotes': ['error', 'single'],
     'no-tabs': 'error',
-    'react/prop-types': false,
+    'react/prop-types': 0,
     'padding-line-between-statements': [
         'error',
         { 'blankLine': 'always', 'prev': '*', 'next': 'return' },
