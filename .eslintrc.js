@@ -6,7 +6,6 @@ module.exports = {
   },
   'extends': [
     'eslint:recommended',
-    'plugin:react/recommended',
     'react-app',
   ],
   'parser': '@typescript-eslint/parser',
@@ -27,6 +26,7 @@ module.exports = {
     'semi': 2,
     'quotes': ['error', 'single'],
     'no-tabs': 'error',
+    'react/prop-types': false,
     'padding-line-between-statements': [
         'error',
         { 'blankLine': 'always', 'prev': '*', 'next': 'return' },
