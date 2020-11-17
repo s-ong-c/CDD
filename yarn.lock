@@ -1763,9 +1763,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@inter-section/utils@workspace:packages/@inter-section-utils":
+"@inter-section/utils@workspace:packages/utils":
   version: 0.0.0-use.local
-  resolution: "@inter-section/utils@workspace:packages/@inter-section-utils"
+  resolution: "@inter-section/utils@workspace:packages/utils"
   languageName: unknown
   linkType: soft
 
