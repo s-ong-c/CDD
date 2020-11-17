@@ -6,7 +6,7 @@ module.exports = {
   },
   'extends': [
     'eslint:recommended',
-    'react-app',
+    'plugin:react/recommended',
   ],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
