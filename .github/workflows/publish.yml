@@ -24,7 +24,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install
       - name: Deploy new Package
-        run: yarn run semantic-release
+        run: yarn semantic-release
         env:
           GH_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
