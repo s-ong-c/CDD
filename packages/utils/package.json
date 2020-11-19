@@ -13,5 +13,10 @@
     "typecheck": "tsc"
   },
   "license": "MIT",
-  "gitHead": "dc7272456757e1bbb6013619f937a6fcaacf8bd3"
+  "gitHead": "dc7272456757e1bbb6013619f937a6fcaacf8bd3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s-ong-c/CDD.git",
+    "directory": "packages/utils"
+  }
 }
