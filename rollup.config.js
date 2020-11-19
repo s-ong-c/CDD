@@ -1,15 +1,15 @@
-import babel from "rollup-plugin-babel";
-import commonjs from "rollup-plugin-commonjs";
-import json from "rollup-plugin-json";
+import babel from 'rollup-plugin-babel';
+import commonjs from 'rollup-plugin-commonjs';
+import json from 'rollup-plugin-json';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import resolve from "rollup-plugin-node-resolve";
-import url from "rollup-plugin-url";
+import resolve from 'rollup-plugin-node-resolve';
+import url from 'rollup-plugin-url';
 
-const extensions = [".js", ".jsx", ".ts", ".tsx"];
+const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
-const isProduction = process.env.NODE_ENV = 'production'
+const isProduction = process.env.NODE_ENV = 'production';
 
-console.log(isProduction)
+console.log(isProduction);
 
 function buildJS(input, output, format) {
   const defaultOutputConfig = {
@@ -51,5 +51,5 @@ function buildJS(input, output, format) {
 
 export default [
   buildJS('index.ts', 'dist/index.js', 'cjs'),
-  buildJS('index.ts','dist/esm', 'es'),
+  buildJS('index.ts', 'dist/esm', 'es'),
 ];
