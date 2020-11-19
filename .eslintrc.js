@@ -1,40 +1,58 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'commonjs': true,
-    'es2020': true,
-  },
-  'extends': [
-    'eslint:recommended',
-    'plugin:react/recommended',
-  ],
-  'parser': '@typescript-eslint/parser',
-  'parserOptions': {
-    'ecmaVersion': 11,
-    'sourceType': 'module',
-    'ecmaFeatures': {
-      jsx: true,
+  parser: '@typescript-eslint/parser', // Specifies the ESLint parser
+  plugins: ['simple-import-sort'],
+  // extends: [
+  //   'plugin:@typescript-eslint/recommended',
+  //   'plugin:react/recommended',
+  // ],
+  parserOptions: {
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: 'module', // Allows for the use of imports
+    ecmaFeatures: {
+      jsx: true, // Allows for the parsing of JSX
     },
   },
-  'plugins': [
-    '@typescript-eslint',
-  ],
-  'rules': {
-    'no-multiple-empty-lines': 'error',
+  rules: {
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-parameter-properties': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-angle-bracket-type-assertion': 'off',
+    '@typescript-eslint/no-empty-interface': 'off',
     'comma-dangle': ['error', 'always-multiline'],
     'eol-last': ['error', 'always'],
+    'max-len': ['error', {
+      'code': 100,
+      'ignoreComments': false,
+      'ignoreUrls': true,
+    }],
     'semi': 2,
-    'quotes': ['error', 'single'],
-    'no-tabs': 'error',
-    'react/prop-types': 0,
-    'padding-line-between-statements': [
-        'error',
-        { 'blankLine': 'always', 'prev': '*', 'next': 'return' },
+    'indent': [
+      'error', 2,
+      { 'SwitchCase': 1 },
     ],
-  },
-  'settings': {
-    react: {
-      version: 'detect',
-    },
+    'padding-line-between-statements': [
+      'error',
+      { 'blankLine': 'always', 'prev': '*', 'next': 'return' },
+    ],
+    'simple-import-sort/sort': 'error',
+    'sort-imports': 'off',
+    'import/order': 'off',
+    'comma-spacing': ['error', { 'before': false, 'after': true }],
+    'object-curly-spacing': ['error', 'always', { 'objectsInObjects': false }],
+    'quotes': ['error', 'single', {
+      'allowTemplateLiterals': true,
+      'avoidEscape': true,
+    }],
+    'space-before-function-paren': ['error', {
+      'anonymous': 'never',
+      'named': 'never',
+      'asyncArrow': 'always',
+    }],
+    'no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
+    'react/prop-types': false,
   },
 };
