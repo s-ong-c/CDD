@@ -11,7 +11,7 @@
       "prerelease": "beta"
     }
   ],
-  "repositoryUrl": "https://github.com/s-ong-c/CDD",
+  "repositoryUrl": "https://github.com/s-ong-c/cdd",
   "debug": "true",
   "plugins": [
     "@semantic-release/commit-analyzer",

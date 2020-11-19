@@ -1,5 +1,5 @@
 {
-  "name": "@s-ong-c/utils",
+  "name": "@songc/utils",
   "description": "Utils for cdd",
   "version": "1.0.0",
   "main": "dist/index.js",
