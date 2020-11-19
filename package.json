@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "cdd",
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
@@ -23,6 +23,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@mdx-js/react": "^1.6.16",
+    "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.2.0",
     "@storybook/addon-actions": "^6.0.28",
@@ -68,9 +69,6 @@
     "packages/*",
     "examples/*"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "config": {
     "commitizen": {
       "path": "cz-lerna-changelog"
