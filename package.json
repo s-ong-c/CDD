@@ -1,5 +1,11 @@
 {
   "name": "root",
+  "author": "s-ong-c <somony9292@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s-ong-c/CDD.git"
+  },
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
