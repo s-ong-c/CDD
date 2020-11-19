@@ -12,5 +12,6 @@
     "lint:fix": "yarn lint --fix",
     "typecheck": "tsc"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "dc7272456757e1bbb6013619f937a6fcaacf8bd3"
 }
