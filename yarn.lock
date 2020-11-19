@@ -17528,6 +17528,7 @@ resolve@^1.18.1:
     rollup-plugin-url: ^3.0.1
     semantic-release: ^17.2.3
     semantic-release-monorepo: ^7.0.3
+    semantic-release-plugin-decorators: ^3.0.0
     shelljs: ^0.8.4
     typescript: 4.0.2
     webpack: ^4.44.1
