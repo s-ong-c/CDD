@@ -1,10 +1,10 @@
 module.exports = {
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
-  plugins: ['simple-import-sort'],
-  // extends: [
-  //   'plugin:@typescript-eslint/recommended',
-  //   'plugin:react/recommended',
-  // ],
+  plugins: ['simple-import-sort', 'import'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+  ],
   parserOptions: {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
@@ -38,7 +38,6 @@ module.exports = {
       'error',
       { 'blankLine': 'always', 'prev': '*', 'next': 'return' },
     ],
-    'simple-import-sort/sort': 'error',
     'sort-imports': 'off',
     'import/order': 'off',
     'comma-spacing': ['error', { 'before': false, 'after': true }],
@@ -53,6 +52,11 @@ module.exports = {
       'asyncArrow': 'always',
     }],
     'no-multi-spaces': ['error', { 'ignoreEOLComments': true }],
-    'react/prop-types': false,
+    'react/prop-types': 0,
+  },
+  settings:{
+    'react': {
+      'version': 'detect',
+    },
   },
 };

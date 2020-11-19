@@ -1,12 +1,12 @@
-import Button, { ButtonType } from "./index";
+import Button, { ButtonType } from './index';
 
-import React from "react";
+import React from 'react';
 
 export default {
-  title: "버튼",
+  title: '버튼',
   component: Button,
   parameters: {
-    componentSubtitle: "Button 컴포넌트",
+    componentSubtitle: 'Button 컴포넌트',
   },
 };
 
