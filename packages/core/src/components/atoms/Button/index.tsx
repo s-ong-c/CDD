@@ -1,10 +1,10 @@
 /** @jsx jsx */
 
-import { css, jsx } from '@emotion/react';
+import { SerializedStyles, css, jsx } from '@emotion/react';
 
 import { IComponentProps } from '../../../model/commonProps';
 import React from 'react';
-import { palette } from '../../../palette';
+import { palette } from '../../../index';
 
 export enum ButtonType {
   DEFAULT = 'default',
@@ -29,8 +29,7 @@ const style = css`
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   }
 `;
-
-const themes = {
+const themes: { [key: string]: SerializedStyles } = {
   primary: css`
     background: ${palette.key0};
     color: white;
@@ -71,14 +70,15 @@ interface IProps extends IComponentProps {
 
 const Button: React.FC<IProps> = ({
   children,
-  theme,
+  theme = 'default',
   isCapture = false,
   onClick,
 }) => {
   const clickEvent = isCapture ? { onClickCapture: onClick } : { onClick };
+  const colors = themes[theme];
 
   return (
-    <button css={[style, themes[theme]]} {...clickEvent}>
+    <button css={[style, colors]} {...clickEvent}>
       {children}
     </button>
   );

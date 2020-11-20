@@ -1,9 +1,15 @@
 {
   "extends": "../../tsconfig.common.json",
   "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "target": "esnext",
     "module": "commonjs",
     "declaration": true,
+    "jsx":"react",
     "outDir": "./dist"
   },
   "include": ["src"]
