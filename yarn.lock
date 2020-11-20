@@ -3069,6 +3069,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@s-ong-c/core@workspace:packages/core":
+  version: 0.0.0-use.local
+  resolution: "@s-ong-c/core@workspace:packages/core"
+  languageName: unknown
+  linkType: soft
+
 "@s-ong-c/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@s-ong-c/utils@workspace:packages/utils"

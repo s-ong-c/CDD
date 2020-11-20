@@ -4,6 +4,7 @@ import { css, jsx } from '@emotion/react';
 
 import { IComponentProps } from '../../../model/commonProps';
 import React from 'react';
+import { palette } from '../../../palette';
 
 export enum ButtonType {
   DEFAULT = 'default',
@@ -31,13 +32,13 @@ const style = css`
 
 const themes = {
   primary: css`
-    background: #20c997;
+    background: ${palette.key0};
     color: white;
     &:hover {
-      background: #38d9a9;
+      background: ${palette.key1};
     }
     &:active {
-      background: #12b886;
+      background: ${palette.key2};
     }
   `,
   secondary: css`
