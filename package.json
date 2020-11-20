@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "lerna run build",
+    "pre": "lerna clean --yes && lerna bootstrap && lerna run build",
     "test": "lerna run test",
     "start": "craco start",
     "typecheck": "lerna run typecheck",
