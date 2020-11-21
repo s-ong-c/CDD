@@ -3069,6 +3069,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@s-ong-c/core@file:packages/core::locator=root%40workspace%3A.":
+  version: 0.0.1
+  resolution: "@s-ong-c/core@file:packages/core#packages/core::hash=a40302&locator=root%40workspace%3A."
+  dependencies:
+    "@emotion/react": ^11.1.1
+    "@types/react": ^16.9.49
+    "@types/react-dom": ^16.9.8
+    react: ^17.0.1
+    react-dom: ^17.0.1
+    typescript: 4.0.2
+  checksum: d39a7cc3789e04b20ec3f30dfb5774ee5a70db7732c2ca9053c018ddc5332bfdca15daeb2b82a26be34f8b6a5036cd5d02c3b8851f4c1bf04a4f6363098e1e30
+  languageName: node
+  linkType: hard
+
 "@s-ong-c/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@s-ong-c/core@workspace:packages/core"
@@ -3081,6 +3095,13 @@ __metadata:
     typescript: 4.0.2
   languageName: unknown
   linkType: soft
+
+"@s-ong-c/utils@file:packages/utils::locator=root%40workspace%3A.":
+  version: 1.0.0
+  resolution: "@s-ong-c/utils@file:packages/utils#packages/utils::hash=5eaded&locator=root%40workspace%3A."
+  checksum: 4cc4b2b3b2ab1ce16e8467755e9abdcadef5dee6d03f74b923c80191f49197c9f2f2c4d733d9e5302369d3b5a474c90f2bf4623e12874e72d19224973f037185
+  languageName: node
+  linkType: hard
 
 "@s-ong-c/utils@workspace:packages/utils":
   version: 0.0.0-use.local
@@ -4182,7 +4203,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^16.9.49":
+"@types/react@npm:^16.9.49, @types/react@npm:^16.9.56":
   version: 16.9.56
   resolution: "@types/react@npm:16.9.56"
   dependencies:
@@ -14697,7 +14718,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^16.13.1, react-dom@npm:^16.8.3":
+"react-dom@npm:^16.8.3":
   version: 16.13.1
   resolution: "react-dom@npm:16.13.1"
   dependencies:
@@ -14801,10 +14822,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1, react-is@npm:^16.7.0, react-is@npm:^16.8.1":
+"react-is@npm:^16.7.0, react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 11bcf1267a314a522615f626f3ce3727a3a24cdbf61c4d452add3550a7875326669631326cfb1ba3e92b6f72244c32ffecf93ad21c0cad8455d3e169d0e3f060
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^17.0.1":
+  version: 17.0.1
+  resolution: "react-is@npm:17.0.1"
+  checksum: 5a83dfc78e7adcb93d632bf367b0733db650e3abd2e9c57c33b87e50d201212c1884b0d7bcf13e692f1556189fa1b87f9f3e0ba10fe858fd6aebe83ed4fcd1ea
   languageName: node
   linkType: hard
 
@@ -14885,17 +14913,6 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ^16.8.0
   checksum: 27d83f57c59254366cb13255d3a7771813bf771f2f5b14c273497dbf80d26dc6c4f646feeff8b789c18a0c313ad04d9ba26a63fb5a9e4cfeaffc0569cc224643
-  languageName: node
-  linkType: hard
-
-"react@npm:^16.13.1":
-  version: 16.14.0
-  resolution: "react@npm:16.14.0"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    prop-types: ^15.6.2
-  checksum: 2769580b22952a52de3b5b2ea0f09cb904030b762d759739f49ab4da0b1f550e5c087ce3728c4be90f423d09481e0c075483c0c30b1ea9c549445c8b12020fd3
   languageName: node
   linkType: hard
 
@@ -15749,12 +15766,14 @@ resolve@^1.18.1:
     "@commitlint/config-conventional": ^11.0.0
     "@emotion/react": ^11.1.1
     "@mdx-js/react": ^1.6.16
+    "@s-ong-c/core": "file:packages/core"
+    "@s-ong-c/utils": "file:packages/utils"
     "@storybook/addon-actions": ^6.0.28
     "@storybook/addon-docs": ^6.0.28
     "@storybook/addon-essentials": ^6.0.28
     "@storybook/addon-links": ^6.0.28
     "@storybook/react": ^6.0.28
-    "@types/react": ^16.9.49
+    "@types/react": ^16.9.56
     "@typescript-eslint/eslint-plugin": ^4.1.0
     "@typescript-eslint/parser": ^4.1.0
     babel-loader: ^8.1.0
@@ -15771,9 +15790,9 @@ resolve@^1.18.1:
     inquirer: ^7.3.3
     lerna: ^3.22.1
     pnp-webpack-plugin: ^1.6.4
-    react: ^16.13.1
-    react-dom: ^16.13.1
-    react-is: ^16.13.1
+    react: ^17.0.1
+    react-dom: ^17.0.1
+    react-is: ^17.0.1
     rollup: ^2.26.11
     rollup-plugin-babel: ^4.4.0
     rollup-plugin-commonjs: ^10.1.0
