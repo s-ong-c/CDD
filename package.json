@@ -37,6 +37,7 @@
     "@storybook/addon-links": "^6.0.28",
     "@storybook/react": "^6.0.28",
     "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^4.1.0",
     "@typescript-eslint/parser": "^4.1.0",
     "babel-loader": "^8.1.0",
@@ -81,5 +82,9 @@
   },
   "peerDependencies": {
     "react": "*"
+  },
+  "dependencies": {
+    "@s-ong-c/core": "file:packages/core",
+    "@s-ong-c/utils": "file:packages/utils"
   }
 }

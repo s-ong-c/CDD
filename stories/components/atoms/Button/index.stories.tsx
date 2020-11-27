@@ -1,5 +1,4 @@
-import Button, { ButtonType } from './index';
-
+import { Button } from '../../../../packages/core/index';
 import React from 'react';
 
 export default {
@@ -15,8 +14,8 @@ export const defaultButton = () => {
 };
 
 export const primaryButton = () => {
-  return <Button theme={ButtonType.PRIMARY}>primary 버튼</Button>;
+  return <Button theme={'primary'}>primary 버튼</Button>;
 };
 export const secondaryButton = () => {
-  return <Button theme={ButtonType.SECONDARY}>secondary 버튼</Button>;
+  return <Button theme={'secondary'}>secondary 버튼</Button>;
 };

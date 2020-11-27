@@ -3,7 +3,7 @@
 
 __metadata:
   version: 4
-  cacheKey: 7
+  cacheKey: 6
 
 "@babel/code-frame@npm:7.8.3":
   version: 7.8.3
@@ -1445,7 +1445,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.10.4, @babel/types@npm:^7.10.5, @babel/types@npm:^7.11.0, @babel/types@npm:^7.11.5, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3, @babel/types@npm:^7.9.5":
+"@babel/types@npm:^7.10.4, @babel/types@npm:^7.10.5, @babel/types@npm:^7.11.0, @babel/types@npm:^7.11.5, @babel/types@npm:^7.4.4, @babel/types@npm:^7.9.5":
   version: 7.11.5
   resolution: "@babel/types@npm:7.11.5"
   dependencies:
@@ -3069,6 +3069,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@s-ong-c/core@file:packages/core::locator=root%40workspace%3A.":
+  version: 0.0.1
+  resolution: "@s-ong-c/core@file:packages/core#packages/core::hash=13342f&locator=root%40workspace%3A."
+  checksum: a8d57fad073d60901af857a3c8e0330066726eb19ac2ba67ed2691e8839a1721e6f930501b3f9741a96b714b4c8fa6290d004bf932fa2123996b5a561173d792
+  languageName: node
+  linkType: hard
+
 "@s-ong-c/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@s-ong-c/core@workspace:packages/core"
@@ -3076,12 +3083,20 @@ __metadata:
     "@emotion/react": ^11.1.1
     "@types/react": ^16.9.49
     "@types/react-dom": ^16.9.8
+    core-js: ^3.6.5
     react: ^16.13.1
     react-dom: ^16.13.1
     react-is: ^16.13.1
     typescript: 4.0.2
   languageName: unknown
   linkType: soft
+
+"@s-ong-c/utils@file:packages/utils::locator=root%40workspace%3A.":
+  version: 1.0.0
+  resolution: "@s-ong-c/utils@file:packages/utils#packages/utils::hash=5eaded&locator=root%40workspace%3A."
+  checksum: 4cc4b2b3b2ab1ce16e8467755e9abdcadef5dee6d03f74b923c80191f49197c9f2f2c4d733d9e5302369d3b5a474c90f2bf4623e12874e72d19224973f037185
+  languageName: node
+  linkType: hard
 
 "@s-ong-c/utils@workspace:packages/utils":
   version: 0.0.0-use.local
@@ -9426,20 +9441,20 @@ fsevents@^1.2.7:
 
 "fsevents@patch:fsevents@^1.2.7#builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#builtin<compat/fsevents>::version=1.2.13&hash=127e8e"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#builtin<compat/fsevents>::version=1.2.13&hash=87eb42"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
-  checksum: 7bc048c164eb72f91b18ba7cd2ba30679a0afe57e9cd6352eac4bdbc4ddd4ca2ea98674d0bd3a80e96427469adc433c13532494b36aea40fceab36e198982182
+  checksum: 31c62373556f061f4b4c52ff61c91bc9080243ea074a38a81cf12c1f2c9098da731ea3d39705c805b738427e4284af6b8151efe65ce9ca6b11378d43f36db2c4
   languageName: node
   linkType: hard
 
 "fsevents@patch:fsevents@^2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.1.2#builtin<compat/fsevents>":
   version: 2.1.3
-  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#builtin<compat/fsevents>::version=2.1.3&hash=127e8e"
+  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#builtin<compat/fsevents>::version=2.1.3&hash=87eb42"
   dependencies:
     node-gyp: latest
-  checksum: e2b8c379340e21a786d32c653854c8876f94eb1202dd5be378fd42c062bc123aab5051c32bf0011865257c85982c41ded203f9fe8c9f9c8f8c84dc4672abc0e0
+  checksum: d8ae862048fc127cdbd00d02b2feb7c25946c3ce4cbc44e958134be87e239577a16dafafa1c270d010b8624e1b1e0372e23f7865c55c6f83e83fc9f68b0a30d2
   languageName: node
   linkType: hard
 
@@ -15741,12 +15756,15 @@ resolve@^1.18.1:
     "@commitlint/config-conventional": ^11.0.0
     "@emotion/react": ^11.1.1
     "@mdx-js/react": ^1.6.16
+    "@s-ong-c/core": "file:packages/core"
+    "@s-ong-c/utils": "file:packages/utils"
     "@storybook/addon-actions": ^6.0.28
     "@storybook/addon-docs": ^6.0.28
     "@storybook/addon-essentials": ^6.0.28
     "@storybook/addon-links": ^6.0.28
     "@storybook/react": ^6.0.28
     "@types/react": ^16.9.49
+    "@types/react-dom": ^16.9.8
     "@typescript-eslint/eslint-plugin": ^4.1.0
     "@typescript-eslint/parser": ^4.1.0
     babel-loader: ^8.1.0
@@ -17541,7 +17559,7 @@ typescript@4.0.2:
 
 "typescript@patch:typescript@4.0.2#builtin<compat/typescript>":
   version: 4.0.2
-  resolution: "typescript@patch:typescript@npm%3A4.0.2#builtin<compat/typescript>::version=4.0.2&hash=5bf698"
+  resolution: "typescript@patch:typescript@npm%3A4.0.2#builtin<compat/typescript>::version=4.0.2&hash=5b02a2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver

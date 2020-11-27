@@ -83,4 +83,4 @@ const Button: React.FC<IProps> = ({
   );
 };
 
-export default { Button };
+export default Button;
