@@ -7,6 +7,8 @@
     "url": "https://github.com/s-ong-c/CDD.git"
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
     "build": "lerna run build",
     "test": "lerna run test",
     "start": "craco start",

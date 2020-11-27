@@ -28,6 +28,7 @@ function buildJS(input, output, format) {
 
   return {
     input,
+    external: ['react'],
     output: [
       format === 'es' ? esOutputConfig : cjsOutputConfig,
     ],

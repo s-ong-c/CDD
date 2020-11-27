@@ -67,7 +67,6 @@ interface IProps extends IComponentProps {
   onClick?(event: React.MouseEvent<HTMLButtonElement>): void;
   theme: string;
 }
-
 const Button: React.FC<IProps> = ({
   children,
   theme = 'default',
@@ -84,4 +83,4 @@ const Button: React.FC<IProps> = ({
   );
 };
 
-export default Button;
+export default { Button };
