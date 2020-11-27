@@ -3069,13 +3069,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@s-ong-c/core@file:packages/core::locator=root%40workspace%3A.":
-  version: 0.0.2
-  resolution: "@s-ong-c/core@file:packages/core#packages/core::hash=c60e2b&locator=root%40workspace%3A."
-  checksum: e6637131e7bf09122b7c5b62e95a37e2ef278d942072e00a3ce84e135249a695bc7493a01cd478fd7df105a5777fc133be3cffda077c87b2a721dcee111d2576
-  languageName: node
-  linkType: hard
-
 "@s-ong-c/core@workspace:packages/core":
   version: 0.0.0-use.local
   resolution: "@s-ong-c/core@workspace:packages/core"
@@ -3090,13 +3083,6 @@ __metadata:
     typescript: 4.0.2
   languageName: unknown
   linkType: soft
-
-"@s-ong-c/utils@file:packages/utils::locator=root%40workspace%3A.":
-  version: 1.0.0
-  resolution: "@s-ong-c/utils@file:packages/utils#packages/utils::hash=72b146&locator=root%40workspace%3A."
-  checksum: 0cf085a23cab73113fc8b1d71c08b15e0e0cd9d2af5dab3ce389ebfa3b8bcfa384c5598d74c80349b23e3079334b3df8d75d413e06ad6bbd5788f99d519d2232
-  languageName: node
-  linkType: hard
 
 "@s-ong-c/utils@workspace:packages/utils":
   version: 0.0.0-use.local
@@ -15756,8 +15742,6 @@ resolve@^1.18.1:
     "@commitlint/config-conventional": ^11.0.0
     "@emotion/react": ^11.1.1
     "@mdx-js/react": ^1.6.16
-    "@s-ong-c/core": "file:packages/core"
-    "@s-ong-c/utils": "file:packages/utils"
     "@storybook/addon-actions": ^6.0.28
     "@storybook/addon-docs": ^6.0.28
     "@storybook/addon-essentials": ^6.0.28

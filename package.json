@@ -82,9 +82,5 @@
   },
   "peerDependencies": {
     "react": "*"
-  },
-  "dependencies": {
-    "@s-ong-c/core": "file:packages/core",
-    "@s-ong-c/utils": "file:packages/utils"
   }
 }
