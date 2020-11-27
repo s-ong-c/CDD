@@ -3070,9 +3070,9 @@ __metadata:
   linkType: hard
 
 "@s-ong-c/core@file:packages/core::locator=root%40workspace%3A.":
-  version: 0.0.1
-  resolution: "@s-ong-c/core@file:packages/core#packages/core::hash=13342f&locator=root%40workspace%3A."
-  checksum: a8d57fad073d60901af857a3c8e0330066726eb19ac2ba67ed2691e8839a1721e6f930501b3f9741a96b714b4c8fa6290d004bf932fa2123996b5a561173d792
+  version: 0.0.2
+  resolution: "@s-ong-c/core@file:packages/core#packages/core::hash=c60e2b&locator=root%40workspace%3A."
+  checksum: e6637131e7bf09122b7c5b62e95a37e2ef278d942072e00a3ce84e135249a695bc7493a01cd478fd7df105a5777fc133be3cffda077c87b2a721dcee111d2576
   languageName: node
   linkType: hard
 
@@ -3093,8 +3093,8 @@ __metadata:
 
 "@s-ong-c/utils@file:packages/utils::locator=root%40workspace%3A.":
   version: 1.0.0
-  resolution: "@s-ong-c/utils@file:packages/utils#packages/utils::hash=5eaded&locator=root%40workspace%3A."
-  checksum: 4cc4b2b3b2ab1ce16e8467755e9abdcadef5dee6d03f74b923c80191f49197c9f2f2c4d733d9e5302369d3b5a474c90f2bf4623e12874e72d19224973f037185
+  resolution: "@s-ong-c/utils@file:packages/utils#packages/utils::hash=72b146&locator=root%40workspace%3A."
+  checksum: 0cf085a23cab73113fc8b1d71c08b15e0e0cd9d2af5dab3ce389ebfa3b8bcfa384c5598d74c80349b23e3079334b3df8d75d413e06ad6bbd5788f99d519d2232
   languageName: node
   linkType: hard
 
