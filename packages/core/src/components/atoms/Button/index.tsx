@@ -21,16 +21,17 @@ const style = css`
   padding: 0 1rem;
   border-radius: 0.25rem;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   &:focus {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   }
 `;
 const themes: { [key: string]: SerializedStyles } = {
-  primary: css`
+  disabled: css`
     background: ${palette.key0};
     color: white;
     &:hover {
@@ -40,47 +41,86 @@ const themes: { [key: string]: SerializedStyles } = {
       background: ${palette.key2};
     }
   `,
-  secondary: css`
-    background: #e9ecef;
-    color: #343a40;
+  primary: css`
+    background: ${palette.key0};
+    color: white;
     &:hover {
-      background: #f1f3f5;
+      background: ${palette.key1};
     }
     &:active {
-      background: #dee2e6;
+      background: ${palette.key3};
+    }
+  `,
+  secondary: css`
+    color: ${palette.key0};
+    border: 1px solid ${palette.key0};
+    background: none;
+    &:hover {
+      color: ${palette.key1};
+      border: 1px solid ${palette.key1};
+    }
+    &:active {
+      color: ${palette.key3};
+      border: 1px solid ${palette.key3};
     }
   `,
   tertiary: css`
     background: none;
-    color: #20c997;
+    color: ${palette.key0};
     &:hover {
-      background: #e6fcf5;
+      color: ${palette.key1};
     }
     &:active {
-      background: #c3fae8;
+      color: ${palette.key3};
+      background: rgba(233, 137, 48, 0.08);
     }
+  `,
+};
+
+const sizes = {
+  small: css`
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0 0.75rem;
+  `,
+  medium: css`
+    height: 2.5rem;
+    font-size: 1.125rem;
+    padding: 0 1rem;
+  `,
+  large: css`
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0 1.25rem;
   `,
 };
 
 interface IProps extends IComponentProps {
   isCapture?: boolean;
   onClick?(event: React.MouseEvent<HTMLButtonElement>): void;
-  theme: string;
+  theme?: string;
+  size?: 'small' | 'medium' | 'large';
 }
+
 const Button: React.FC<IProps> = ({
   children,
-  theme = 'default',
+  theme = 'primary',
   isCapture = false,
   onClick,
+  size = 'large',
 }) => {
   const clickEvent = isCapture ? { onClickCapture: onClick } : { onClick };
   const colors = themes[theme];
 
   return (
-    <button css={[style, colors]} {...clickEvent}>
+    <button css={[style, colors, sizes[size]]} {...clickEvent}>
       {children}
     </button>
   );
+};
+Button.defaultProps = {
+  theme: 'primary',
+  size: 'medium',
 };
 
 export default Button;
