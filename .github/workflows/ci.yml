@@ -33,5 +33,3 @@ jobs:
         run: yarn run typecheck
       - name: Lint Check
         run: yarn run lint
-      - name: Run test
-        run: yarn run test
