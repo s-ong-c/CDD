@@ -3,6 +3,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from 'rollup-plugin-node-resolve';
+import svgr from '@svgr/rollup';
 import url from 'rollup-plugin-url';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
@@ -45,6 +46,7 @@ function buildJS(input, output, format) {
       }),
       json(),
       url(),
+      svgr(),
     ],
     preserveModules: format === 'es',
   };
