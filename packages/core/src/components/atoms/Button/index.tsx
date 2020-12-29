@@ -100,15 +100,16 @@ interface IProps extends IComponentProps {
   onClick?(event: React.MouseEvent<HTMLButtonElement>): void;
   theme?: string;
   size?: 'small' | 'medium' | 'large';
+  children: React.ReactNode;
 }
 
-const Button: React.FC<IProps> = ({
+function Button({
   children,
   theme = 'primary',
   isCapture = false,
   onClick,
   size = 'large',
-}) => {
+}: IProps) {
   const clickEvent = isCapture ? { onClickCapture: onClick } : { onClick };
   const colors = themes[theme];
 
@@ -117,7 +118,7 @@ const Button: React.FC<IProps> = ({
       {children}
     </button>
   );
-};
+}
 Button.defaultProps = {
   theme: 'primary',
   size: 'medium',
