@@ -1,3 +1,4 @@
+/** @jsxRuntime classic /
 /** @jsx jsx */
 import { ButtonGroup } from '../../../../packages/core/index';
 import { jsx } from '@emotion/react';

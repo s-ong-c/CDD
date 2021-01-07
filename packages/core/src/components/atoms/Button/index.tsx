@@ -1,5 +1,5 @@
+/** @jsxRuntime classic /
 /** @jsx jsx */
-
 import { SerializedStyles, css, jsx } from '@emotion/react';
 
 import { IComponentProps } from '../../../model/commonProps';

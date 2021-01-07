@@ -1,3 +1,4 @@
+/** @jsxRuntime classic /
 /** @jsx jsx */
 import Button from '../../atoms/Button';
 import Icon from '../../atoms/Icon';
